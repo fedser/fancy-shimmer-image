@@ -14,8 +14,8 @@ class FancyShimmerImage extends StatelessWidget {
     Key? key,
     required this.imageUrl,
     this.boxFit = BoxFit.fill,
-    this.width = 300,
-    this.height = 300,
+    this.width,
+    this.height,
     this.shimmerDirection = ShimmerDirection.ltr,
     this.shimmerDuration = const Duration(milliseconds: 1500),
     this.cacheKey,
@@ -30,8 +30,8 @@ class FancyShimmerImage extends StatelessWidget {
   }) : super(key: key);
 
   final String imageUrl;
-  final double width;
-  final double height;
+  final double? width;
+  final double? height;
   final ShimmerDirection shimmerDirection;
   final Duration shimmerDuration;
   final BoxFit boxFit;

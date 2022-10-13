@@ -7,8 +7,8 @@ class DefaultErrorWidget extends StatelessWidget {
     required this.height,
   });
 
-  final double width;
-  final double height;
+  final double? width;
+  final double? height;
 
   @override
   Widget build(BuildContext context) {
